@@ -1,0 +1,35 @@
+@media screen and (min-width: 48em){
+    main{
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .container{
+        position: absolute;
+        grid-template-areas: 
+            "one one two five"
+            "three four four five";
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    .card-1{
+        grid-area: one;
+        background-position: top right 20%;
+    }
+    
+    .card-2{
+        grid-area: two;
+    }
+    
+    .card-3{
+        grid-area: three;
+    }
+    
+    .card-4{
+        grid-area: four;
+    }
+    
+    .card-5{
+        grid-area: five;
+    }
+}
